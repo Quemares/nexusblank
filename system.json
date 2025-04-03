@@ -11,7 +11,7 @@
     "manifest": "",
     "url": "",
     "download": "",
-    "esmodules": ["nexus.mjs"],
+    "esmodules": ["nexus.js"],
     "styles": ["nexus.css"],
     "packs": [],
     "languages": [],
