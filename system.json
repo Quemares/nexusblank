@@ -1,0 +1,24 @@
+{
+    "name": "nexusblank",
+    "title": "Nexus from Scratch",
+    "description": "A Foundry VTT system to play Nexus games",
+    "author": "Quemares",
+    "version": "0.1.0",
+    "compatibility": {
+        "minimum": 12,
+        "verified": 12
+    },
+    "manifest": "",
+    "url": "",
+    "download": "",
+    "esmodules": ["nexus.mjs"],
+    "styles": ["nexus.css"],
+    "packs": [],
+    "languages": [],
+    "grid": {
+        "distance": 1,
+        "units": "m"
+    },
+    "primaryTokenAttribute": "health",
+    "initiative": "@dexterity"
+}
