@@ -2,16 +2,21 @@
     "name": "nexusblank",
     "title": "Nexus from Scratch",
     "description": "A Foundry VTT system to play Nexus games",
-    "author": "Quemares",
+    "authors": [{
+        "name": "Quemares",
+        "url": "",
+        "email": "",
+        "discord": ""
+      }],
     "version": "0.1.0",
     "compatibility": {
         "minimum": 12,
         "verified": 12
     },
-    "manifest": "",
-    "url": "",
+    "manifest": "https://github.com/Quemares/nexusblank/blob/main/system.json",
+    "url": "https://github.com/Quemares/nexusblank.git",
     "download": "",
-    "esmodules": ["nexus.js"],
+    "esmodules": ["module/nexus.js"],
     "styles": ["nexus.css"],
     "packs": [],
     "languages": [],

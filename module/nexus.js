@@ -1,4 +1,4 @@
-import { NexusItemSheet } from "./module/sheets/NexusItemSheet";
+import { NexusItemSheet } from "./sheets/item-sheet.mjs";
 
 Hooks.once('init', function(){
     console.log("nexus | Initialising Nexus System");
