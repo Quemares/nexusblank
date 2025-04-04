@@ -10,9 +10,7 @@
             }
         },
         "weapon":{
-            "templates": [
-                "itemDescription"
-            ],
+            "templates": [ "itemDescription" ],
             "range": 0,
             "rate": 0,
             "potency": 0,

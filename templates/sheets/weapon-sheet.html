@@ -3,7 +3,7 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
-    <div>
+    <div class="sheet-content">
         <table>
             <tr>
                 <th>{{localize "nexus.weapon.range"}}</th>
@@ -14,22 +14,24 @@
             </tr>
             <tr>
                 <td>
-                    <input name="data.range" type="text" value="{{data.range}}" data-dtype="Number"/>
+                    <input type="text" name="system.range"  value="{{system.range}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.rate" type="text" value="{{data.rate}}" data-dtype="Number"/>
+                    <input type="text" name="system.rate"  value="{{system.rate}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.potency" type="text" value="{{data.potency}}" data-dtype="Number"/>
+                    <input type="text" name="system.potency"  value="{{system.potency}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.damage" type="text" value="{{data.damage}}" data-dtype="Number"/>
+                    <input type="text" name="system.damage"  value="{{system.damage}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.ammo" type="text" value="{{data.ammo}}" data-dtype="Number"/>
+                    <input type="text" name="system.ammo"  value="{{system.ammo}}" data-dtype="Number"/>
                 </td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
+        <div class="editor">
+        {{editor enrichedDescription target="weapon.description" button=true editable=editable}}
+        </div>
     </div>
 </form>
