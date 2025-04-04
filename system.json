@@ -16,10 +16,21 @@
     "manifest": "https://github.com/Quemares/nexusblank/blob/main/system.json",
     "url": "https://github.com/Quemares/nexusblank.git",
     "download": "",
-    "esmodules": ["module/nexus.js"],
+    "esmodules": ["nexus.js"],
     "styles": ["nexus.css"],
     "packs": [],
-    "languages": [],
+    "languages": [
+        {
+            "lang": "es",
+            "name": "Español",
+            "path": "lang/es.json"
+        },
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
     "grid": {
         "distance": 1,
         "units": "m"

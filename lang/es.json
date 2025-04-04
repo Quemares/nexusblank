@@ -1,0 +1,11 @@
+{
+    "nexus": {
+        "weapon": {
+            "range": "Alcance",
+            "rate": "Cadencia",
+            "potency": "Potencia",
+            "damage": "Daño",
+            "ammo": "Carga"
+        }
+    }
+}

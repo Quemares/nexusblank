@@ -1,0 +1,11 @@
+{
+    "nexus": {
+        "weapon": {
+            "range": "Range",
+            "rate": "Fire Rate",
+            "potency": "Potency",
+            "damage": "Damage",
+            "ammo": "Ammo"
+        }
+    }
+}

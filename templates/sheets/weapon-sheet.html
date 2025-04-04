@@ -3,5 +3,33 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
-    <p>HELLO!</p>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "nexus.weapon.range"}}</th>
+                <th>{{localize "nexus.weapon.rate"}}</th>
+                <th>{{localize "nexus.weapon.potency"}}</th>
+                <th>{{localize "nexus.weapon.damage"}}</th>
+                <th>{{localize "nexus.weapon.ammo"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="data.range" type="text" value="{{data.range}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.rate" type="text" value="{{data.rate}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.potency" type="text" value="{{data.potency}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.damage" type="text" value="{{data.damage}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.ammo" type="text" value="{{data.ammo}}" data-dtype="Number"/>
+                </td>
+            </tr>
+            <textarea name="data.description">{{data.description}}</textarea>
+        </table>
+    </div>
 </form>
