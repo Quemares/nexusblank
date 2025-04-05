@@ -6,6 +6,10 @@
             "potency": "Potencia",
             "damage": "Daño",
             "ammo": "Carga"
+        },
+        "armor": {
+            "armor": "Blindaje",
+            "regen": "Regeneracion"
         }
     }
 }

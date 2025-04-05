@@ -6,6 +6,10 @@
             "potency": "Potency",
             "damage": "Damage",
             "ammo": "Ammo"
+        },
+        "armor": {
+            "armor": "Armor",
+            "regen": "Regeneration"
         }
     }
 }
