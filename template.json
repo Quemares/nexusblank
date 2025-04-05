@@ -1,5 +1,84 @@
 {
-    "Actor": {},
+    "Actor": {
+        "types": [
+            "commando",
+            "technologist",
+            "npc"
+        ],
+        "templates":{
+            "actorDescription":{
+                "biography": ""
+            },
+            "actorAttributes":{
+                "attributes":{
+                    "charisma": 1,
+                    "bravery": 1,
+                    "dexterity": 1,
+                    "strength": 1,
+                    "intellect": 1
+                }
+            },
+            "actorResources":{
+                "health":{
+                    "min":0,
+                    "value":10,
+                    "max":10
+                },
+                "armor": 0,
+                "regen": 0
+            },
+            "actorHumanity":{
+                "rank": 0,
+                "merit": 0,
+                "conviction": "",
+                "trn": 4,
+                "humanity-coldness": 0,
+                "duty-rebellious": 0
+            },
+            "actorSkills":{
+                "skills":{
+                    "coverfire": 1,
+                    "brawling": 1,
+                    "hacking": 1,
+                    "xenotech": 1
+                }
+            }
+        },
+        "commando":{
+            "templates": [ 
+                "actorDescription", 
+                "actorAttributes", 
+                "actorResources", 
+                "actorHumanity",
+                "actorSkills"
+            ],
+            "skills":{
+                "camouflage": 1,
+                "sapper": 1,
+                "medicine": 1
+            }
+        },
+        "technologist":{
+            "templates": [
+                "actorDescription", 
+                "actorAttributes", 
+                "actorResources", 
+                "actorHumanity",
+                "actorSkills"
+            ],
+            "skills":{
+                "cybernetics": 1,
+                "geology": 1,
+                "mechanics": 1
+            }
+        },
+        "npc":{
+            "templates": [
+                "actorDescription",
+                "actorResources"
+            ]
+        }
+    },
     "Item": {
         "types": [
             "weapon",

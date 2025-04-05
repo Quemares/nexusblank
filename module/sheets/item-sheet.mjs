@@ -9,7 +9,7 @@ export class NexusItemSheet extends ItemSheet {
     }
 
     get template() {
-        return `systems/nexusblank/templates/sheets/${this.item.type}-sheet.html`;
+        return `systems/nexusblank/templates/sheets/items/${this.item.type}-sheet.hbs`;
     }
 
     async getData() {
@@ -40,7 +40,7 @@ export class NexusItemSheet extends ItemSheet {
         context.flags = itemData.flags;
     
         // Adding a pointer to CONFIG.NEXUS
-        context.config = CONFIG.NEXUS;
+        context.config = CONFIG.nexus;
     
         return context;
       }
