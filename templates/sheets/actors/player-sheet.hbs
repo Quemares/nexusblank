@@ -1,19 +1,78 @@
 <form class="{{cssClass}}" autocomplete="off">
 
     <header class="sheet-header">
-
+        <div>Sistema Atenea</div>
+        <h1>NEXUS</h1>
+        <div>Directorio Ares</div>
     </header>
 
     <div class="sheet-content">
 
         <div class="sheet-stats">
             
-            <div class="sheet-attributes">
-
+            <div class="sheet-attributes-box">
+                <h2>{{localize "nexus.sheet.attributes.name"}}</h2>
+                <div class="sheet-attributes-stats">
+                <table>
+                    <tr>
+                        <td>{{localize "nexus.sheet.attributes.charisma"}}</td>
+                        <td><input type="text" name="system.attributes.charisma"  value="{{system.attributes.charisma}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.attributes.bravery"}}</td>
+                        <td><input type="text" name="system.attributes.bravery"  value="{{system.attributes.bravery}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.attributes.dexterity"}}</td>
+                        <td><input type="text" name="system.attributes.dexterity"  value="{{system.attributes.dexterity}}" data-dtype="Number"/></td>
+                    </tr>
+                    <tr>
+                        <td>{{localize "nexus.sheet.attributes.strength"}}</td>
+                        <td><input type="text" name="system.attributes.strength"  value="{{system.attributes.strength}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.attributes.intellect"}}</td>
+                        <td><input type="text" name="system.attributes.intellect"  value="{{system.attributes.intellect}}" data-dtype="Number"/></td>
+                    </tr>
+                </table>
+                </div>
             </div>
-
-            <div class="sheet-skills">
-
+            
+            <div class="sheet-skills-box">
+                <h2>{{localize "nexus.sheet.skills.name"}}</h2>
+                <div class="sheet-skills-stats">
+                <table>
+                    <tr>
+                        <td><input type="text" name="system.skills.coverfire"  value="{{system.skills.coverfire}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.skills.coverfire"}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{localize "nexus.sheet.skills.brawling"}}</td>
+                        <td><input type="text" name="system.skills.brawling"  value="{{system.skills.brawling}}" data-dtype="Number"/></td>
+                        <td><input type="text" name="system.skills.hacking"  value="{{system.skills.hacking}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.skills.hacking"}}</td>       
+                    </tr>
+                    <tr>
+                        <td>{{localize "nexus.sheet.skills.xenotech"}}</td>
+                        <td><input type="text" name="system.skills.xenotech"  value="{{system.skills.xenotech}}" data-dtype="Number"/></td>
+                        {{#if (eq actor.type "commando")}}
+                        <td><input type="text" name="system.skills.camouflage"  value="{{system.skills.camouflage}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.skills.camouflage"}}</td>       
+                    </tr>
+                    <tr>
+                        <td>{{localize "nexus.sheet.skills.sapper"}}</td>
+                        <td><input type="text" name="system.skills.sapper"  value="{{system.skills.sapper}}" data-dtype="Number"/></td>
+                        <td><input type="text" name="system.skills.medicine"  value="{{system.skills.medicine}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.skills.medicine"}}</td>  
+                    </tr>
+                        {{/if}}
+                        {{#if (eq actor.type "technologist")}}
+                        <td><input type="text" name="system.skills.cybernetics"  value="{{system.skills.cybernetics}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.skills.cybernetics"}}</td>       
+                    </tr>
+                    <tr>
+                        <td>{{localize "nexus.sheet.skills.geology"}}</td>
+                        <td><input type="text" name="system.skills.geology"  value="{{system.skills.geology}}" data-dtype="Number"/></td>
+                        <td><input type="text" name="system.skills.mechanics"  value="{{system.skills.mechanics}}" data-dtype="Number"/></td>
+                        <td>{{localize "nexus.sheet.skills.mechanics"}}</td>  
+                    </tr>
+                        {{/if}}
+                </table>
+                </div>
             </div>
 
             <div class="sheet-advantages">

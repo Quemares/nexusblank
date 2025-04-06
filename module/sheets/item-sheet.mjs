@@ -1,7 +1,7 @@
 export class NexusItemSheet extends ItemSheet {
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             width: 530,
             height: 340,
             classes: ["nexus", "sheet", "item"]

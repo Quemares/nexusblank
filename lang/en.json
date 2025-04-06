@@ -10,6 +10,29 @@
         "armor": {
             "armor": "Armor",
             "regen": "Regeneration"
+        },
+        "sheet": {
+            "attributes": {
+                "name": "Attributes",
+                "charisma": "Charisma",
+                "bravery": "Bravery",
+                "dexterity": "Dexterity",
+                "strength": "Strength",
+                "intellect": "Intellect"
+            },
+            "skills": {
+                "name": "Skills",
+                "coverfire": "Cover Fire",
+                "brawling": "Brawling",
+                "hacking": "Hacking",
+                "xenotech": "Alien Technology",
+                "camouflage": "Camouflage",
+                "sapper": "Sapper",
+                "medicine": "Medicine",
+                "cybernetics": "Cybernetics Control",
+                "geology": "Geology",
+                "mechanics": "Mechanics"
+            }
         }
     }
 }

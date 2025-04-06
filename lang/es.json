@@ -10,6 +10,29 @@
         "armor": {
             "armor": "Blindaje",
             "regen": "Regeneracion"
+        },
+        "sheet": {
+            "attributes": {
+                "name": "Atributos",
+                "charisma": "Carisma",
+                "bravery": "Coraje",
+                "dexterity": "Destreza",
+                "strength": "Fortaleza",
+                "intellect": "Intelecto"
+            },
+            "skills": {
+                "name": "Habilidades",
+                "coverfire": "Fuego de Cobertura",
+                "brawling": "Pelea",
+                "hacking": "Pirateo de Sistemas",
+                "xenotech": "Tecnologia Alienigena",
+                "camouflage": "Camuflarse",
+                "sapper": "Zapador",
+                "medicine": "Medicina",
+                "cybernetics": "Control Cibernetico",
+                "geology": "Geologia",
+                "mechanics": "Mecanica"
+            }
         }
     }
 }
