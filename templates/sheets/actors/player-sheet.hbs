@@ -76,7 +76,12 @@
             </div>
 
             <div class="sheet-advantages">
-
+                <h2>{{localize "nexus.sheet.advantage.name"}}</h2>
+                <div class="sheet-advantages-lists">
+                {{#each advantage as |advantage id|}}
+                    {{> "systems/nexusblank/templates/partials/advantage-card.hbs" advantage}}
+                {{/each}}
+                </div>
             </div>
 
             <div class="sheet-implants">

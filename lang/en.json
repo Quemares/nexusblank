@@ -32,6 +32,9 @@
                 "cybernetics": "Cybernetics Control",
                 "geology": "Geology",
                 "mechanics": "Mechanics"
+            },
+            "advantage": {
+                "name": "Advantages"
             }
         }
     }

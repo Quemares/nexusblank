@@ -93,7 +93,7 @@
             }
         },
         "weapon":{
-            "templates": [ "itemDescription" ],
+            "templates": ["itemDescription"],
             "range": 0,
             "rate": 0,
             "potency": 0,
@@ -101,18 +101,18 @@
             "ammo": 0
         },
         "armor":{
-            "templates": [ "itemDescription" ],
+            "templates": ["itemDescription"],
             "armor": 0,
             "regen": 0
         },
         "advantage":{
-            "templates": [ "itemDescription" ]
+            "templates": ["itemDescription"]
         },
         "implant":{
-            "templates": [ "itemDescription" ]
+            "templates": ["itemDescription"]
         },
         "upgrade":{
-            "templates": [ "itemDescription" ]
+            "templates": ["itemDescription"]
         }
     }
 }

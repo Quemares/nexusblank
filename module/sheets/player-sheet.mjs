@@ -32,6 +32,13 @@ export class NexusPlayerSheet extends ActorSheet {
     // Adding a pointer to CONFIG.NEXUS
     context.config = CONFIG.nexus;
 
+    // filter items owned by the character
+    context.weapons = context.items.filter(function(item) {return item.type == "weapon"});
+    context.armor = context.items.filter(function(item) {return item.type == "armor"});
+    context.advantage = context.items.filter(function(item) {return item.type == "advantage"});
+    context.implant = context.items.filter(function(item) {return item.type == "implant"});
+    context.upgrade = context.items.filter(function(item) {return item.type == "upgrade"});
+
     // Prepare character data and items.
     /** if (actorData.type == 'commando' || actorData.type == "technologist" ) {
       this._prepareItems(context);

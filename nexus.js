@@ -1,6 +1,7 @@
-import { nexus } from "./module/config.js";
+import { nexus } from "./module/helpers/config.js";
 import { NexusItemSheet } from "./module/sheets/item-sheet.mjs";
 import { NexusPlayerSheet } from "./module/sheets/player-sheet.mjs";
+import { preloadHandlebarsTemplates } from "./module/helpers/templates.mjs";
 
 Hooks.once('init', function(){
     console.log("nexus | Initialising Nexus System");
@@ -18,4 +19,6 @@ Hooks.once('init', function(){
       makeDefault: true,
       label: 'NEXUS.SheetLabels.Player',
     });
+
+    return preloadHandlebarsTemplates();
 });
