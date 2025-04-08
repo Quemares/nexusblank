@@ -66,6 +66,28 @@ export class NexusPlayerSheet extends ActorSheet {
       }
     );
 
+    context.enrichedConviction = await TextEditor.enrichHTML(
+      this.actor.system.conviction,
+      {
+        // Whether to show secret blocks in the finished html
+        secrets: this.document.isOwner,
+        // Necessary in v11, can be removed in v12
+        async: true,
+        // Data to fill in for inline rolls
+        rollData: this.actor.getRollData(),
+        // Relative UUID resolution
+        relativeTo: this.actor,
+      }
+    );
+
     return context;
+  }
+
+  activateListeners(html) {
+    super.activateListeners(html);
+
+    // Everything below here is only needed if the sheet is editable
+    if (!this.isEditable) return;
+
   }
 }

@@ -35,7 +35,11 @@
             },
             "advantage": {
                 "name": "Advantages"
-            }
+            },
+            "implant": {
+                "name": "Implants"
+            },
+            "conviction": "Conviction"
         }
     }
 }

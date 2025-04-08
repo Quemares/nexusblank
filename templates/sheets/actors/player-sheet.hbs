@@ -85,11 +85,19 @@
             </div>
 
             <div class="sheet-implants">
-
+                <h2>{{localize "nexus.sheet.implant.name"}}</h2>
+                <div class="sheet-implants-lists">
+                {{#each implant as |implant id|}}
+                    {{> "systems/nexusblank/templates/partials/implant-card.hbs" implant}}
+                {{/each}}
+                </div>
             </div>
 
             <div class="sheet-conviction">
-
+                <h2>{{localize "nexus.sheet.conviction"}}</h2>
+                <div class="editor">
+                {{editor enrichedConviction target="system.conviction" engine="prosemirror" button=true owner=owner editable=editable}}
+                </div>
             </div>
 
         </div>
