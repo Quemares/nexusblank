@@ -1,6 +1,11 @@
 {
     "nexus": {
+        "title": {
+            "system": "Sistema Atenea",
+            "directory": "Directorio Ares"
+        },
         "weapon": {
+            "name": "Nombre",
             "range": "Alcance",
             "rate": "Cadencia",
             "potency": "Potencia",
@@ -8,6 +13,7 @@
             "ammo": "Carga"
         },
         "armor": {
+            "name": "Nombre",
             "armor": "Blindaje",
             "regen": "Regeneracion"
         },
@@ -39,7 +45,13 @@
             "implant": {
                 "name": "Implantes"
             },
-            "conviction": "Conviccion"
+            "conviction": "Conviccion",
+            "weapon": {
+                "name": "Armas"
+            },
+            "armor": {
+                "name": "Armadura"
+            }
         }
     }
 }

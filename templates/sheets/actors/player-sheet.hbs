@@ -1,9 +1,9 @@
 <form class="{{cssClass}}" autocomplete="off">
 
     <header class="sheet-header">
-        <div>Sistema Atenea</div>
+        <div>{{localize "nexus.title.system"}}</div>
         <h1>NEXUS</h1>
-        <div>Directorio Ares</div>
+        <div>{{{localize "nexus.title.directory"}}}</div>
     </header>
 
     <div class="sheet-content">
@@ -109,13 +109,23 @@
             </div>
 
             <div class="sheet-weapons">
-
+                <h2>{{localize "nexus.sheet.weapon.name"}}</h2>
+                <div class="sheet-weapons-lists">
+                {{#each weapon as |weapon id|}}
+                    {{> "systems/nexusblank/templates/partials/weapon-card.hbs" weapon}}
+                {{/each}}
+                </div>
             </div>
 
             <div class="sheet-other">
 
                 <div class="sheet-armor">
-
+                    <h2>{{localize "nexus.sheet.armor.name"}}</h2>
+                    <div class="sheet-armor-lists">
+                    {{#each armor as |armor id|}}
+                        {{> "systems/nexusblank/templates/partials/armor-card.hbs" armor}}
+                    {{/each}}
+                    </div>
                 </div>
 
                 <div class="sheet-equip">

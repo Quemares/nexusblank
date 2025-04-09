@@ -1,6 +1,11 @@
 {
     "nexus": {
+        "title": {
+            "system": "Athena System",
+            "directory": "Ares Directory"
+        },
         "weapon": {
+            "name": "Name",
             "range": "Range",
             "rate": "Fire Rate",
             "potency": "Potency",
@@ -8,6 +13,7 @@
             "ammo": "Ammo"
         },
         "armor": {
+            "name": "Name",
             "armor": "Armor",
             "regen": "Regeneration"
         },
@@ -39,7 +45,13 @@
             "implant": {
                 "name": "Implants"
             },
-            "conviction": "Conviction"
+            "conviction": "Conviction",
+            "weapon": {
+                "name": "Weapons"
+            },
+            "armor": {
+                "name": "Armor"
+            }
         }
     }
 }

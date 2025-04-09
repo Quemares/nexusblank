@@ -33,7 +33,7 @@ export class NexusPlayerSheet extends ActorSheet {
     context.config = CONFIG.nexus;
 
     // filter items owned by the character
-    context.weapons = context.items.filter(function(item) {return item.type == "weapon"});
+    context.weapon = context.items.filter(function(item) {return item.type == "weapon"});
     context.armor = context.items.filter(function(item) {return item.type == "armor"});
     context.advantage = context.items.filter(function(item) {return item.type == "advantage"});
     context.implant = context.items.filter(function(item) {return item.type == "implant"});
