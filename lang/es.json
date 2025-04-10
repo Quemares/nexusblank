@@ -51,7 +51,18 @@
             },
             "armor": {
                 "name": "Armadura"
-            }
+            },
+            "inventory": "Equipo",
+            "name": "Nombre",
+            "humanity": "Humanidad",
+            "coldness": "Frieldad",
+            "humanity-coldness": "Humanidad-Frieldad",
+            "rank": "Rango",
+            "merit": "Merito",
+            "duty": "Deber",
+            "rebellious": "Rebeldia",
+            "duty-rebellious": "Deber-Rebeldia",
+            "health": "Vida"
         }
     }
 }

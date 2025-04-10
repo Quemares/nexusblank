@@ -51,7 +51,18 @@
             },
             "armor": {
                 "name": "Armor"
-            }
+            },
+            "inventory": "Inventory",
+            "name": "Name",
+            "humanity": "Humanity",
+            "coldness": "Coldness",
+            "humanity-coldness": "Humanity-Coldness",
+            "rank": "Rank",
+            "merit": "Merit",
+            "duty": "Duty",
+            "rebellious": "Rebellious",
+            "duty-rebellious": "Duty-Rebellious",
+            "health": "Health"
         }
     }
 }

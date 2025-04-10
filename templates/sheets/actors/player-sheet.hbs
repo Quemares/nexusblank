@@ -8,7 +8,7 @@
 
     <div class="sheet-content">
 
-        <div class="sheet-stats">
+        <div class="sheet-left">
             
             <div class="sheet-attributes-box">
                 <h2>{{localize "nexus.sheet.attributes.name"}}</h2>
@@ -102,10 +102,35 @@
 
         </div>
 
-        <div class="sheet-inventory">
+        <div class="sheet-right">
 
-            <div class="sheet-humanity">
+            <div class="sheet-main-box">
+                <div class="sheet-name-box">
+                    <h2>{{localize "nexus.sheet.name"}}</h2>
+                    <input type="text" name="name" value="{{actor.name}}" data-dtype="String"/>
+                </div>
+                <div class="sheet-rank-box">
+                    {{localize "nexus.sheet.rank"}}:
+                    <input type="text" name="system.rank" value="{{system.rank}}" data-dtype="Number"/>
+                </div>
+                <div class="sheet-humanity-box">
+                    {{localize "nexus.sheet.humanity-coldness"}}:
+                    <input type="text" name="system.humanity-coldness" value="{{system.humanity-coldness}}" data-dtype="Number"/>
+                    {{localize "nexus.sheet.duty-rebellious"}}:
+                    <input type="text" name="system.duty-rebellious" value="{{system.duty-rebellious}}" data-dtype="Number"/>
+                    {{localize "nexus.sheet.merit"}}:
+                    <input type="text" name="system.merit" value="{{system.merit}}" data-dtype="Number"/>
+                    TRN:
+                    <input type="text" name="system.trn" value="{{system.trn}}" data-dtype="Number"/>
+                </div>
+                <div class="sheet-image-health-box">
+                    <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+                    {{localize "nexus.sheet.health"}}:
+                    <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
+                    / {{system.health.max}}
 
+
+                </div>
             </div>
 
             <div class="sheet-weapons">
@@ -128,10 +153,12 @@
                     </div>
                 </div>
 
-                <div class="sheet-equip">
-
-                </div>
-
+                <div class="sheet-inventory">
+                    <h2>{{localize "nexus.sheet.inventory"}}</h2>
+                    <div class="editor">
+                    {{editor enrichedInventory target="system.conviction" engine="prosemirror" button=true owner=owner editable=editable}}
+                    </div>
+                    </div>
             </div>
 
         </div>

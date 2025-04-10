@@ -80,6 +80,20 @@ export class NexusPlayerSheet extends ActorSheet {
       }
     );
 
+    context.enrichedInventory = await TextEditor.enrichHTML(
+      this.actor.system.inventory,
+      {
+        // Whether to show secret blocks in the finished html
+        secrets: this.document.isOwner,
+        // Necessary in v11, can be removed in v12
+        async: true,
+        // Data to fill in for inline rolls
+        rollData: this.actor.getRollData(),
+        // Relative UUID resolution
+        relativeTo: this.actor,
+      }
+    );
+
     return context;
   }
 

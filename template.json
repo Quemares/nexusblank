@@ -42,6 +42,9 @@
                     "hacking": 1,
                     "xenotech": 1
                 }
+            },
+            "actorInventory":{
+                "inventory": ""
             }
         },
         "commando":{
@@ -50,7 +53,8 @@
                 "actorAttributes", 
                 "actorResources", 
                 "actorHumanity",
-                "actorSkills"
+                "actorSkills",
+                "actorInventory"
             ],
             "skills":{
                 "camouflage": 1,
@@ -64,7 +68,8 @@
                 "actorAttributes", 
                 "actorResources", 
                 "actorHumanity",
-                "actorSkills"
+                "actorSkills",
+                "actorInventory"
             ],
             "skills":{
                 "cybernetics": 1,
