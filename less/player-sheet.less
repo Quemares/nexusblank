@@ -30,6 +30,80 @@
                     }
                 }
             }
+            .sheet-skills-box{
+                .sheet-skills-stats{
+                    display: grid;
+                    grid-template-areas: 
+                    '. . . value1 name1 name1 name1'
+                    'name2 name2 value2 . value3 name3 name3'
+                    'name4 value4 . . . value5 name5'
+                    'name6 name6 value6 . value7 name7 name7';
+                    grid-gap: 10px;
+                    .coverfire-value{ 
+                        grid-area: value1;
+                        width: 15px;
+                    }
+                    .coverfire-name{ grid-area: name1}
+                    .brawling-value{ 
+                        grid-area: value2;
+                        width: 15px;
+                    }
+                    .brawling-name{ 
+                        grid-area: name2;
+                        justify-self: right;
+                    }
+                    .hacking-value{ 
+                        grid-area: value3;
+                        width: 15px;
+                    }
+                    .hacking-name{ grid-area: name3}
+                    .xenotech-value{ 
+                        grid-area: value4;
+                        width: 15px;
+                    }
+                    .xenotech-name{ 
+                        grid-area: name4;
+                        justify-self: right;
+                    }
+                    .camouflage-value{ 
+                        grid-area: value5;
+                        width: 15px;
+                    }
+                    .camouflage-name{ grid-area: name5}
+                    .sapper-value{ 
+                        grid-area: value6;
+                        width: 15px;
+                    }
+                    .sapper-name{ 
+                        grid-area: name6;
+                        justify-self: right;
+                    }
+                    .medicine-value{ 
+                        grid-area: value7;
+                        width: 15px;
+                    }
+                    .medicine-name{ grid-area: name7}
+                    .cybernetics-value{ 
+                        grid-area: value5;
+                        width: 15px;
+                    }
+                    .cybernetics-name{ grid-area: name5}
+                    .geology-value{ 
+                        grid-area: value6;
+                        width: 15px;
+                    }
+                    .geology-name{ 
+                        grid-area: name6;
+                        justify-self: right;
+                    }
+                    .mechanics-value{ 
+                        grid-area: value7;
+                        width: 15px;
+                    }
+                    .mechanics-name{ grid-area: name7}
+                }
+            }
+        
         }
         .sheet-right{
             .sheet-other{

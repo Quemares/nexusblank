@@ -46,43 +46,30 @@
             <div class="sheet-skills-box">
                 <h2>{{localize "nexus.sheet.skills.name"}}</h2>
                 <div class="sheet-skills-stats">
-                <table>
-                    <tr>
-                        <td><input type="text" name="system.skills.coverfire"  value="{{system.skills.coverfire}}" data-dtype="Number"/></td>
-                        <td>{{localize "nexus.sheet.skills.coverfire"}}</td>
-                    </tr>
-                    <tr>
-                        <td>{{localize "nexus.sheet.skills.brawling"}}</td>
-                        <td><input type="text" name="system.skills.brawling"  value="{{system.skills.brawling}}" data-dtype="Number"/></td>
-                        <td><input type="text" name="system.skills.hacking"  value="{{system.skills.hacking}}" data-dtype="Number"/></td>
-                        <td>{{localize "nexus.sheet.skills.hacking"}}</td>       
-                    </tr>
-                    <tr>
-                        <td>{{localize "nexus.sheet.skills.xenotech"}}</td>
-                        <td><input type="text" name="system.skills.xenotech"  value="{{system.skills.xenotech}}" data-dtype="Number"/></td>
-                        {{#if (eq actor.type "commando")}}
-                        <td><input type="text" name="system.skills.camouflage"  value="{{system.skills.camouflage}}" data-dtype="Number"/></td>
-                        <td>{{localize "nexus.sheet.skills.camouflage"}}</td>       
-                    </tr>
-                    <tr>
-                        <td>{{localize "nexus.sheet.skills.sapper"}}</td>
-                        <td><input type="text" name="system.skills.sapper"  value="{{system.skills.sapper}}" data-dtype="Number"/></td>
-                        <td><input type="text" name="system.skills.medicine"  value="{{system.skills.medicine}}" data-dtype="Number"/></td>
-                        <td>{{localize "nexus.sheet.skills.medicine"}}</td>  
-                    </tr>
-                        {{/if}}
-                        {{#if (eq actor.type "technologist")}}
-                        <td><input type="text" name="system.skills.cybernetics"  value="{{system.skills.cybernetics}}" data-dtype="Number"/></td>
-                        <td>{{localize "nexus.sheet.skills.cybernetics"}}</td>       
-                    </tr>
-                    <tr>
-                        <td>{{localize "nexus.sheet.skills.geology"}}</td>
-                        <td><input type="text" name="system.skills.geology"  value="{{system.skills.geology}}" data-dtype="Number"/></td>
-                        <td><input type="text" name="system.skills.mechanics"  value="{{system.skills.mechanics}}" data-dtype="Number"/></td>
-                        <td>{{localize "nexus.sheet.skills.mechanics"}}</td>  
-                    </tr>
-                        {{/if}}
-                </table>
+                    <input class="coverfire-value" type="text" name="system.skills.coverfire"  value="{{system.skills.coverfire}}" data-dtype="Number"/></td>
+                    <div class="coverfire-name">{{localize "nexus.sheet.skills.coverfire"}}</div>
+                    <div class="brawling-name">{{localize "nexus.sheet.skills.brawling"}}</div>
+                    <input class="brawling-value" type="text" name="system.skills.brawling"  value="{{system.skills.brawling}}" data-dtype="Number"/></td>
+                    <input class="hacking-value" type="text" name="system.skills.hacking"  value="{{system.skills.hacking}}" data-dtype="Number"/></td>
+                    <div class="hacking-name">{{localize "nexus.sheet.skills.hacking"}}</div>   
+                    <div class="xenotech-name">{{localize "nexus.sheet.skills.xenotech"}}</div>
+                    <input class="xenotech-value" type="text" name="system.skills.xenotech"  value="{{system.skills.xenotech}}" data-dtype="Number"/></td>
+                    {{#if (eq actor.type "commando")}}
+                        <input class="camouflage-value" type="text" name="system.skills.camouflage"  value="{{system.skills.camouflage}}" data-dtype="Number"/></td>
+                        <div class="camouflage-name">{{localize "nexus.sheet.skills.camouflage"}}</div>       
+                        <div class="sapper-name">{{localize "nexus.sheet.skills.sapper"}}</div>
+                        <input class="sapper-value" type="text" name="system.skills.sapper"  value="{{system.skills.sapper}}" data-dtype="Number"/></td>
+                        <input class="medicine-value" type="text" name="system.skills.medicine"  value="{{system.skills.medicine}}" data-dtype="Number"/></td>
+                        <div class="medicine-name">{{localize "nexus.sheet.skills.medicine"}}</div>  
+                    {{/if}}
+                    {{#if (eq actor.type "technologist")}}
+                        <input class="cybernetics-value" type="text" name="system.skills.cybernetics"  value="{{system.skills.cybernetics}}" data-dtype="Number"/></td>
+                        <div class="cybernetics-name">{{localize "nexus.sheet.skills.cybernetics"}}</div>       
+                        <div class="geology-name">{{localize "nexus.sheet.skills.geology"}}</div>
+                        <input class="geology-value" type="text" name="system.skills.geology"  value="{{system.skills.geology}}" data-dtype="Number"/></td>
+                        <input class="mechanics-value" type="text" name="system.skills.mechanics"  value="{{system.skills.mechanics}}" data-dtype="Number"/></td>
+                        <div class="mechanics-name">{{localize "nexus.sheet.skills.mechanics"}}</div>  
+                    {{/if}}
                 </div>
             </div>
 
