@@ -114,6 +114,79 @@
 .nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .mechanics-name {
   grid-area: name7;
 }
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-advantages .sheet-advantages-lists {
+  display: flex;
+  flex-direction: column;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-advantages .sheet-advantages-lists section {
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-implants .sheet-implants-lists {
+  display: flex;
+  flex-direction: column;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-implants .sheet-implants-lists section {
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section {
+  display: flex;
+  flex-direction: column;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .first-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .first-row .generic-name {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .first-row .weapon-name {
+  flex: 4 1;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .first-row .generic-ammo {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .first-row .weapon-ammo {
+  flex: 1 1 30px;
+  max-width: 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .first-row .separator {
+  flex: 0 1;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .first-row .max-ammo {
+  flex: 1 1 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .generic-range {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .weapon-range {
+  flex: 1 1 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .generic-rate {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .weapon-rate {
+  flex: 1 1 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .generic-potency {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .weapon-potency {
+  flex: 1 1 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .generic-damage {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section .second-row .weapon-damage {
+  flex: 1 1 30px;
+}
 .nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other {
   display: flex;
   flex-direction: row;

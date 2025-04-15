@@ -2,8 +2,8 @@ export class NexusPlayerSheet extends ActorSheet {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            width: 530,
-            height: 340,
+            width: 800,
+            height: 950,
             classes: ["nexus", "sheet", "actor", "player"]
         });
     }

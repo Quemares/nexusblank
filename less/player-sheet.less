@@ -103,9 +103,63 @@
                     .mechanics-name{ grid-area: name7}
                 }
             }
+            .sheet-advantages{
+                .sheet-advantages-lists{
+                    display: flex;
+                    flex-direction: column;
+                    section {
+                        display: flex;
+                        flex-direction: row;
+
+                    }
+                }
+            }
+            .sheet-implants{
+                .sheet-implants-lists{
+                    display: flex;
+                    flex-direction: column;
+                    section {
+                        display: flex;
+                        flex-direction: row;
+                        
+                    }
+                }
+            }
         
         }
         .sheet-right{
+            .sheet-weapons{
+                .sheet-weapons-lists{
+                    section{
+                        display: flex;
+                        flex-direction: column;
+                        .first-row{
+                            width: 100%;
+                            display: flex;
+                            flex-direction:row;
+                            .generic-name{ flex: 0 1 75px;}
+                            .weapon-name{ flex: 4 1;}
+                            .generic-ammo{ flex: 0 1 75px;}
+                            .weapon-ammo{ flex: 1 1 30px; max-width: 30px;}
+                            .separator{ flex: 0 1;}
+                            .max-ammo{ flex: 1 1 30px;}
+                        }
+                        .second-row{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            .generic-range{ flex: 0 1 75px;}
+                            .weapon-range{ flex: 1 1 30px;}
+                            .generic-rate{ flex: 0 1 75px;}
+                            .weapon-rate{ flex: 1 1 30px;}
+                            .generic-potency{ flex: 0 1 75px;}
+                            .weapon-potency{ flex: 1 1 30px;}
+                            .generic-damage{ flex: 0 1 75px;}
+                            .weapon-damage{ flex: 1 1 30px;}
+                        }
+                    }
+                }
+            }
             .sheet-other{
                 display: flex;
                 flex-direction: row;
