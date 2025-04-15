@@ -36,83 +36,33 @@
   text-align: center;
 }
 .nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats {
-  display: grid;
-  grid-template-areas: '. . . value1 name1 name1 name1' 'name2 name2 value2 . value3 name3 name3' 'name4 value4 . . . value5 name5' 'name6 name6 value6 . value7 name7 name7';
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .coverfire-value {
-  grid-area: value1;
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-general {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-general .skill {
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-general .skill .value {
   width: 15px;
 }
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .coverfire-name {
-  grid-area: name1;
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-specific {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .brawling-value {
-  grid-area: value2;
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-specific .skill {
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-specific .skill .value {
   width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .brawling-name {
-  grid-area: name2;
-  justify-self: right;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .hacking-value {
-  grid-area: value3;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .hacking-name {
-  grid-area: name3;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .xenotech-value {
-  grid-area: value4;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .xenotech-name {
-  grid-area: name4;
-  justify-self: right;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .camouflage-value {
-  grid-area: value5;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .camouflage-name {
-  grid-area: name5;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sapper-value {
-  grid-area: value6;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sapper-name {
-  grid-area: name6;
-  justify-self: right;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .medicine-value {
-  grid-area: value7;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .medicine-name {
-  grid-area: name7;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .cybernetics-value {
-  grid-area: value5;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .cybernetics-name {
-  grid-area: name5;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .geology-value {
-  grid-area: value6;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .geology-name {
-  grid-area: name6;
-  justify-self: right;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .mechanics-value {
-  grid-area: value7;
-  width: 15px;
-}
-.nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .mechanics-name {
-  grid-area: name7;
 }
 .nexus.sheet.actor.player .sheet-content .sheet-left .sheet-advantages .sheet-advantages-lists {
   display: flex;

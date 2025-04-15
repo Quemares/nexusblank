@@ -27,6 +27,7 @@
                 "intellect": "Intellect"
             },
             "skills": {
+                "specific": "Specific Skills",
                 "name": "Skills",
                 "coverfire": "Cover Fire",
                 "brawling": "Brawling",
