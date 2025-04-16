@@ -54,6 +54,7 @@
                 "name": "Armor"
             },
             "inventory": "Inventory",
+            "characteristics": "Characteristics",
             "name": "Name",
             "humanity": "Humanity",
             "coldness": "Coldness",

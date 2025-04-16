@@ -127,32 +127,43 @@
 
         <div class="sheet-right">
 
-            <div class="sheet-main-box">
-                <div class="sheet-name-box">
-                    <h2>{{localize "nexus.sheet.name"}}</h2>
-                    <input type="text" name="name" value="{{actor.name}}" data-dtype="String"/>
+            <div class="sheet-main">
+                <h2>{{localize "nexus.sheet.characteristics"}}</h2>
+                <div class="sheet-header-box">
+                    <div class="generic-name">{{localize "nexus.sheet.name"}}:</div>
+                    <input class="actor-name" type="text" name="name" value="{{actor.name}}" data-dtype="String"/>
                 </div>
-                <div class="sheet-rank-box">
-                    {{localize "nexus.sheet.rank"}}:
-                    <input type="text" name="system.rank" value="{{system.rank}}" data-dtype="Number"/>
-                </div>
-                <div class="sheet-humanity-box">
-                    {{localize "nexus.sheet.humanity-coldness"}}:
-                    <input type="text" name="system.humanity-coldness" value="{{system.humanity-coldness}}" data-dtype="Number"/>
-                    {{localize "nexus.sheet.duty-rebellious"}}:
-                    <input type="text" name="system.duty-rebellious" value="{{system.duty-rebellious}}" data-dtype="Number"/>
-                    {{localize "nexus.sheet.merit"}}:
-                    <input type="text" name="system.merit" value="{{system.merit}}" data-dtype="Number"/>
-                    TRN:
-                    <input type="text" name="system.trn" value="{{system.trn}}" data-dtype="Number"/>
-                </div>
-                <div class="sheet-image-health-box">
-                    <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
-                    {{localize "nexus.sheet.health"}}:
-                    <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
-                    / {{system.health.max}}
-
-
+                <div class="sheet-main-box">
+                    <div class="sheet-rank-box">
+                        <div class="generic-rank">{{localize "nexus.sheet.rank"}}:</div>
+                        <input class="actor-rank" type="text" name="system.rank" value="{{system.rank}}" data-dtype="Number"/>
+                    </div>
+                    <div class="sheet-humanity-box">
+                        <div>
+                            {{localize "nexus.sheet.humanity-coldness"}}:
+                            <input type="text" name="system.humanity-coldness" value="{{system.humanity-coldness}}" data-dtype="Number"/>
+                        </div>
+                        <div>
+                            {{localize "nexus.sheet.duty-rebellious"}}:
+                            <input type="text" name="system.duty-rebellious" value="{{system.duty-rebellious}}" data-dtype="Number"/>
+                        </div>
+                        <div>
+                            {{localize "nexus.sheet.merit"}}:
+                            <input type="text" name="system.merit" value="{{system.merit}}" data-dtype="Number"/>
+                        </div>
+                        <div>
+                            TRN:
+                            <input type="text" name="system.trn" value="{{system.trn}}" data-dtype="Number"/>
+                        </div>
+                    </div>
+                    <div class="sheet-image-health-box">
+                        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+                        <div class="health-box">
+                            <div class="generic-health">{{localize "nexus.sheet.health"}}:</div>
+                            <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
+                            <div class="max-health">/ {{system.health.max}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

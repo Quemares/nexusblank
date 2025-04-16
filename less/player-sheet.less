@@ -39,6 +39,7 @@
                         display: flex;
                         flex-direction: column;
                         width: 50%;
+                        text-align: center;
                         .skill{
                             display: flex;
                             flex-direction: row;
@@ -51,6 +52,7 @@
                         display: flex;
                         flex-direction: column;
                         width: 50%;
+                        text-align: center;
                         .skill{
                             display: flex;
                             flex-direction: row;
@@ -86,6 +88,54 @@
         
         }
         .sheet-right{
+            .sheet-main{
+                .sheet-header-box{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    .generic-name{ flex: 0 1 75px;}
+                    .actor-name{width: 50%;}
+                }
+                .sheet-main-box{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    .sheet-rank-box{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: center;
+                        width: 25%;
+                        .generic-rank{width: 75px;}
+                        .actor-rank{max-width: 30px;}
+                    }
+                    .sheet-humanity-box{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        text-align: center;
+                        div{
+                            display: flex;
+                            flex-direction: row;
+                            input{max-width: 30px;}
+                        }
+                    }
+                    .sheet-image-health-box{
+                        display: flex;
+                        flex-direction: column;
+                        width: 25%;
+                        text-align: center;
+                        .health-box{
+                            display: flex;
+                            flex-direction: row;
+                            text-align: center;
+                            .generic-health{max-width: 75px;}
+                            input{max-width: 30px;}
+                            .max-health{width: 75px;}
+                        }
+                    }
+                }
+            }
             .sheet-weapons{
                 .sheet-weapons-lists{
                     section{

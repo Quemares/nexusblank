@@ -44,6 +44,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  text-align: center;
 }
 .nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-general .skill {
   display: flex;
@@ -56,6 +57,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  text-align: center;
 }
 .nexus.sheet.actor.player .sheet-content .sheet-left .sheet-skills-box .sheet-skills-stats .sheet-skills-stats-specific .skill {
   display: flex;
@@ -79,6 +81,68 @@
 .nexus.sheet.actor.player .sheet-content .sheet-left .sheet-implants .sheet-implants-lists section {
   display: flex;
   flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-header-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-header-box .generic-name {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-header-box .actor-name {
+  width: 50%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-rank-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-rank-box .generic-rank {
+  width: 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-rank-box .actor-rank {
+  max-width: 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-humanity-box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-humanity-box div {
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-humanity-box div input {
+  max-width: 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-image-health-box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-image-health-box .health-box {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-image-health-box .health-box .generic-health {
+  max-width: 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-image-health-box .health-box input {
+  max-width: 30px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-main .sheet-main-box .sheet-image-health-box .health-box .max-health {
+  width: 75px;
 }
 .nexus.sheet.actor.player .sheet-content .sheet-right .sheet-weapons .sheet-weapons-lists section {
   display: flex;

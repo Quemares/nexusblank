@@ -54,6 +54,7 @@
                 "name": "Armadura"
             },
             "inventory": "Equipo",
+            "characteristics": "Caracteristicas",
             "name": "Nombre",
             "humanity": "Humanidad",
             "coldness": "Frieldad",
