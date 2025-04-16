@@ -1,15 +1,20 @@
 <section>
-                    <tr>
-                        <td class="armor-info generic-name">{{localize "nexus.armor.name"}}:</td>
-                        <td class="armor-info armor-name">{{name}}</td>
-                    </tr>
-                    <tr>
-                        <td class="armor-info generic-armor">{{localize "nexus.armor.armor"}}:</td>
-                        <td class="armor-info armor-armor">{{system.armor}}</td>
-                        <td class="armor-info generic-regen">{{localize "nexus.armor.regen"}}:</td>
-                        <td class="armor-info armor-regen">{{system.regen}}</td>
-                    </tr>
-                    <tr>
+    <div class="first-row">
+        <div class="armor-info generic-name">{{localize "nexus.armor.name"}}:</div>
+        <div class="armor-info armor-name">{{name}}</div>
+    </div>
+    <div class="second-row">
+        <div class="armor-info armor">
+            <div class="armor-info generic-armor">{{localize "nexus.armor.armor"}}:</div>
+            <div class="armor-info armor-armor">{{system.armor}}</div>
+        </div>
+        <div class="armor-info regen">
+            <div class="armor-info generic-regen">{{localize "nexus.armor.regen"}}:</div>
+            <div class="armor-info armor-regen">{{system.regen}}</div>
+        </div>
         
-                    </tr>
+    </div>
+    <div>
+        
+    </div>
 </section>

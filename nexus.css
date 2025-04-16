@@ -140,5 +140,44 @@
 .nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor {
+  width: 50%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists {
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists section .first-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists section .first-row .generic-name {
+  flex: 0 1 75px;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists section .first-row .armor-name {
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists section .second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists section .second-row .armor {
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-armor .sheet-armor-lists section .second-row .regen {
+  display: flex;
+  flex-direction: row;
+}
+.nexus.sheet.actor.player .sheet-content .sheet-right .sheet-other .sheet-inventory {
+  width: 50%;
 }

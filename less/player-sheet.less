@@ -121,7 +121,42 @@
             .sheet-other{
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                width: 100%;
+                .sheet-armor{
+                    width: 50%;
+                    .sheet-armor-lists{
+                        width: 100%;
+                        section{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            .first-row{
+                                display: flex;
+                                flex-direction: row;
+                                width: 100%;
+                                .generic-name{ flex: 0 1 75px;}
+                                .armor-name{ width: 100%;}
+                            }
+                            .second-row{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                width: 100%;
+                                .armor{
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                                .regen{
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                            }
+                        }
+                    }
+                }
+                .sheet-inventory{
+                    width: 50%;
+                }
             }
         }
     }
